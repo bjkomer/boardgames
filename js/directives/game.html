@@ -1,6 +1,6 @@
 <div class="game" ng-if="data != null">
-	<h2>{{data.name}}</h2>
-	<h2>{{data.<player range function>}}</h2>
-	<h2>{{data.game_length}}</h2>
-	<h2>{{data.size}}</h2>
+	<h2 class="game-title">{{data.name}}</h2>
+	<p>Number of Players: {{data.playersmin}} - {{data.playersmax}}</p>
+	<p>Average Game Length: {{data.avglength}} minutes</p>
+	<img class="game-icon" ng-src="{{data.image}}" title="{{data.name}}">
 </div>

@@ -4,10 +4,23 @@
 <head>
 
     <script src="js/angular.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
 
 </head>
 
 <body ng-app="BoardgameApp">
+
+
+	<!-- Page Content -->
+    <div class="container" ng-controller="MainController">
+    	<ul class="game-list">
+	    	<li ng-repeat="game in games">
+	    		<game data=game></game>
+	    	</li>
+    	</ul>
+    </div>
+
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
