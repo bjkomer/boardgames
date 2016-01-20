@@ -10,12 +10,21 @@
 	border:solid;
 	border-color: #000000;
 }
-.game-title {
-	text-align: center;
+.game-title div {
+	display: inline-block;
+	vertical-align: middle;
+}
+.game-title h2 {
 	border:solid;
+	text-align: center;
 	margin-top: auto;
 	background-color: #0099FF;
 	color: #000000;
+	height:50px;
+	
+}
+.game-title-small {
+	font-size:1.5vw;
 }
 
 

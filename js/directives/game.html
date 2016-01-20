@@ -1,5 +1,8 @@
 <div class="game" ng-if="data != null">
-	<h2 class="game-title">{{data.name}}</h2>
+	<div class="game-title">
+		<h2 ng-if="data.name.length < 23">{{data.name}}</h2>
+		<h2 ng-if="data.name.length >= 23" class="game-title-small">{{data.name}}</h2>
+	</div>
 	<p>Number of Players: {{data.playersmin}} - {{data.playersmax}}</p>
 	<p>Average Game Length: {{data.avglength}} minutes</p>
 	<img class="game-icon" ng-src="{{data.image}}" title="{{data.name}}">
