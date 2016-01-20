@@ -1,1 +1,1 @@
-var app = angular.module("BoardgameApp", []);
+var app = angular.module("BoardgameApp", ['rzModule']);

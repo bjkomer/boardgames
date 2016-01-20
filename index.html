@@ -4,6 +4,8 @@
 <head>
 
     <script src="js/angular.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/rzslider.css">
+    <script src="js/rzslider.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 
@@ -14,6 +16,12 @@
 
 	<!-- Page Content -->
     <div class="container" ng-controller="MainController">
+    	<div>
+    		<rzslider 
+	    		rz-slider-model="playersSlider.value" 
+	    		rz-slider-options="playersSlider.options">
+    		</rzslider>
+		</div>
     	<ul class="game-list">
 	    	<li ng-repeat="game in games">
 	    		<game data=game></game>
@@ -21,6 +29,8 @@
     	</ul>
     </div>
 
+	<!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
